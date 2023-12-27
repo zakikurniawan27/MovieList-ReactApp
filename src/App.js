@@ -25,9 +25,7 @@ const App = () => {
           <Route
             path="/detail/:id"
             element={
-              <Protected setToken={setToken} token={token}>
-                <Detail setToken={setToken} token={token}/>
-              </Protected>
+              <Detail setToken={setToken} token={token}/>
             }
           />
           <Route

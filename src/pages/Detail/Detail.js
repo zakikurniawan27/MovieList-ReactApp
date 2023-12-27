@@ -37,19 +37,19 @@ const Detail = ({token, setToken})=>{
                         <div className="absolute text-white text-left font-sans left-5 top-44 pr-[47rem]">
                             <h1 className="text-7xl font-bold">{popular.details?.title}</h1>
                             <p className="pt-3">{popular.details?.release_date}</p>
-                            <div className=" flex flex-row gap-3 mt-5">
+                            <div className=" flex flex-row gap-3">
                                 {popular?.details?.genres?.map((item) => 
                                 <p className="text-xl font-semibold">
                                     {item.name},
                                 </p>)}
                             </div>
-                            <p className="pt-12 text-xl">
+                            <p className="pt-5 text-xl">
                                 {popular.details?.overview}
                             </p>
-                            <p className="flex flex-row mt-10">
+                            <p className="flex flex-row mt-5">
                                 <AiOutlineStar className="text-2xl text-yellow-400"/> {popular.details?.vote_average}/10
                             </p>
-                            <button className="btn btn-ghost text-white bg-red-700 font-medium rounded-3xl px-12 mt-7 " > 
+                            <button className="btn btn-ghost text-white bg-red-700 font-medium rounded-3xl px-12 mt-2 " > 
                                 <BiPlayCircle className="mr-2 text-xl"/>Watch Trailer
                             </button>
                         </div>
